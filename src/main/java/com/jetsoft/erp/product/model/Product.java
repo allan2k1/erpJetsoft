@@ -17,10 +17,10 @@ public class Product implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	@Column
+	@Column(unique = true)
 	private String productCode;
 
-	@Column(unique = true)
+	@Column
 	private String description;
 
 	@Column
